@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content1 %}
+
+
+ <h3>The most recent album your artist appeared on is {{ info[1] }} by {{ info[0] }} </h3>
+
+
+{% if not info %}
+    No albums have been looked up yet!
+{% endif %}
+{% endblock %}
