@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+
+
+<h1>Top Tracks</h1>
+
+{% for n in info %}
+    <ul>{{ n }}</ul>
+    <br></br>
+{% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+<h2>Salvatore DiGioia's Midterm -- Si 364</h2>
+<h3>A Spotify Search Application</h3>
+
+
+{% block content1 %}
+
+<form action="{{ url_for('home') }}" method="POST">
+    {{ form.artist.label() }}{{ form.artist() }}<br>
+    {{ form.submit() }}
+    {{ form.hidden_tag() }}
+</form>
+
+
+{% endblock %}
+
+<br> </br>
+<h3>Navigation</h3>
+<ul>
+    <li><a href="{{ url_for('home')}}">Enter a new artist.</a></li>
+    <li><a href="{{ url_for('all_names')}}">See all artists + their ID codes.</a></li>
+    <li><a href="{{ url_for('albums')}}"> Search an artist's albums. </a></li>
+</ul>
